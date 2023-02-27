@@ -19,10 +19,13 @@
     const Compras = () => {
       const [contador, setContador] = React.useState(0);
       console.log(contador);
+      function comprar() {
+        setContador(contador + 1);
+      }
 
       return (
         <div>
-          <button>Comprar</button>
+          <button onClick={comprar}>Comprar</button>
           <p>Total: {}</p>
           <p>Preço: R$ {}</p>
         </div>
